@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactUs/ContactForm.jsx';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 
-const ContactUs = ({ className = '' }) => {
+const ContactPage = ({ className = '' }) => {
   return (
     <section>
         <Header />
@@ -24,4 +24,4 @@ const ContactUs = ({ className = '' }) => {
   );
 };
 
-export default ContactUs;
+export default ContactPage;
