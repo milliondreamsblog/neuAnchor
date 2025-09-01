@@ -2,7 +2,7 @@ import React from 'react';
 
 const StoryCard = ({ title, image }) => {
   return (
-    <div className="bg-white p-4 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="bg-white p-4 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#FFF2B5]">
       
       <div className="w-full h-82">
         <img 

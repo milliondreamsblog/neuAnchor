@@ -1,5 +1,6 @@
 import React from 'react';
 import { Anchor, Facebook, Twitter, Linkedin } from 'lucide-react';
+import footer from '../assets/LandingPage/footer.svg'
 
 const Footer = () => {
   const footerSections = [
@@ -22,7 +23,7 @@ const Footer = () => {
       ]
     },
     {
-      title: '',
+      title: '      NeuAnchor              ',
       links: [
         { name: 'NeuAnchor Careers', href: '#' },
         { name: 'NeuAnchor Education', href: '#' },
@@ -50,25 +51,20 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#195FA6] text-white py-16 px-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-[#195FA6] text-white py-16 px-24">
+      <div className="max-w-7xl ">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">
           <div className="lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 text-white text-2xl font-bold mb-6 no-underline">
-              <Anchor className="w-8 h-8" />
-              NeuAnchor
+            <a href="#" className="flex items-center   text-white text-2xl font-bold mb-6 no-underline">
+                <img src={footer} alt="Footer Asset" className='h-[220px] w-[200px]' />
             </a>
-            <p className="text-gray-300 leading-relaxed">
-              Empowering growth through our family of brands across 
-              education, healthcare, hospitality, and beyond.
-            </p>
           </div>
-          <div className="lg:col-span-3">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="lg:col-start-2 pl-20 lg:col-span-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
               {footerSections.map((section, index) => (
                 <div key={index}>
                   {section.title && (
-                    <h4 className="text-white font-semibold mb-4">{section.title}</h4>
+                    <h4 className="text-white font-Figtree font-semibold mb-4">{section.title}</h4>
                   )}
                   <ul className="space-y-2 list-none p-0">
                     {section.links.map((link, linkIndex) => (
@@ -88,17 +84,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 mb-4 md:mb-0">&copy; 2024 Blueprint Ventures</p>
+        <div className="border-t border-white/20 pt-4 -px-24 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-300 mb-4 md:mb-0">&copy; Copyright © 2025 Bluparrot Ventures</p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white hover:text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
-              <Facebook className="w-5 h-5" />
+            <a href="#" className="w-6 h-6 rounded-full  flex items-center justify-center  bg-white text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
+              <Facebook className="w-3 h-3" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white hover:text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
-              <Twitter className="w-5 h-5" />
+            <a href="#" className="w-6 h-6 rounded-full  flex items-center justify-center  bg-white text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
+              <Twitter className="w-3 h-3" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white hover:text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
-              <Linkedin className="w-5 h-5" />
+            <a href="#" className="w-6 h-6 rounded-full  flex items-center justify-center  bg-white text-blue-800 transition-all duration-300 hover:-translate-y-1 no-underline">
+              <Linkedin className="w-3 h-3" />
             </a>
           </div>
         </div>

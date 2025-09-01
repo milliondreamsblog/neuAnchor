@@ -9,7 +9,7 @@ const CTA = () => {
         </h2>
         <a 
           href="#" 
-          className="inline-flex items-center justify-center px-12 py-3 bg-black text-white font-medium rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg no-underline"
+          className="inline-flex items-center justify-center px-12 py-3 bg-[#333333] text-white font-medium rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg no-underline"
         >
           Contact Us Today
         </a>

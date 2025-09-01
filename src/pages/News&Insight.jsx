@@ -2,27 +2,29 @@ import Header from "../components/Header";
 import StoryCard from "../components/UI/Card";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
+import Story from '../assets/LandingPage/Story.svg'
+import Story2 from '../assets/LandingPage/Story2.svg'
 const News = () =>{
     const storiesData = [
     {
       title: 'From Classrooms to Careers: A Student Success Story',
       description: 'Discover how our education programs transformed a students journey.',
-      image: 'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: Story
     },
     {
       title: 'Empowering Special Needs Families Through Workshops',
       description: 'Learn how our specialized programs support families and communities.',
-      image: 'https://images.pexels.com/photos/8617634/pexels-photo-8617634.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: Story2
     },
     {
       title: 'From Classrooms to Careers: A Student Success Story',
       description: 'Discover how our education programs transformed a students journey.',
-      image: 'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: Story
     },
     {
       title: 'Empowering Special Needs Families Through Workshops',
       description: 'Learn how our specialized programs support families and communities.',
-      image: 'https://images.pexels.com/photos/8617634/pexels-photo-8617634.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: Story2
     }
   ];
     return<section className="bg-[#E0F0FF]  ">

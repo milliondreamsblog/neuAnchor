@@ -1,2 +1,19 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 @import "tailwindcss";
+
+
+/* Define the theme variable */
+@theme {
+  --color-blue-custom: #195FA6;
+  --color-blue-800: #195FA6;
+  --color-blue-700: #195FA6;
+  --color-blue-600: #195FA6;
+  --color-blue-500: #195FA6;
+  --color-blue-400: #195FA6;
+  --color-blue-300: #195FA6;
+  --color-blue-200: #195FA6;
+  --color-blue-100: #195FA6;
+
+  --font-baskerville: "Libre Baskerville", serif;
+  --font-weight-baskerville: 700;
+}

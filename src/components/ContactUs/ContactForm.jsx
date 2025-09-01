@@ -101,10 +101,10 @@ const ContactForm = ({
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Full Name */}
+       
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
-              Full Name*
+              Full Name <span className='text-red-600'>*</span>
             </label>
             <input
               type="text"
@@ -122,10 +122,10 @@ const ContactForm = ({
             )}
           </div>
 
-          {/* Email */}
+       
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-              Email Address*
+              Email Address <span className='text-red-600'>*</span>
             </label>
             <input
               type="email"
@@ -143,10 +143,9 @@ const ContactForm = ({
             )}
           </div>
 
-          {/* Phone */}
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-              Phone Number*
+              Phone Number <span className='text-red-600'>*</span>
             </label>
             <input
               type="tel"
@@ -164,10 +163,10 @@ const ContactForm = ({
             )}
           </div>
 
-          {/* Message */}
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-              Message*
+              Message 
+              <span className='text-red-600'>*</span>
             </label>
             <textarea
               id="message"
@@ -184,8 +183,6 @@ const ContactForm = ({
               <p className="mt-1 text-sm text-red-600">{errors.message}</p>
             )}
           </div>
-
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}

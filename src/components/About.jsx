@@ -4,17 +4,17 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <p className="text-gray-500 text-base mb-8">About NeuAnchor</p>
-        <h2 className="text-3xl lg:text-5xl font-bold text-[#1D69B5] mb-8">
+        <p className="text-black mb-8 font-Figtree  font-semibold text-2xl">About NeuAnchor</p>
+        <h2 className="text-3xl lg:text-4xl font-bold font-baskerville text-[#1D69B5] mb-8 ">
           Anchoring Change. Navigating Growth.
         </h2>
         <div className="max-w-4xl mx-auto">
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className=" text-black text-[18px] mb-8 font-Figtree font-normal ">
             At NeuAnchor, we believe progress is built on connection, compassion, and creativity. Our family of brands 
             spans education, healthcare, careers, hospitality, and beyond — all driven by our purpose to create 
             experiences enriching and impactful.
           </p>
-          <p className="text-lg text-gray-600 mb-12 leading-relaxed">
+          <p className="text-black text-[18px] mb-8 font-Figtree ">
             We are more than a parent company — we are a force for change. Through our eight brands, 
             NeuAnchor delivers solutions that inspire, heal, and empower.
           </p>

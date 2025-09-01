@@ -1,5 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import MyMap from '../components/UI/Map';
+
 
 const ContactInfo = ({
   className = '',
@@ -24,14 +26,14 @@ const ContactInfo = ({
       <div className="p-6 space-y-6">
         {/* Email */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-            <Mail className="w-5 h-5 text-[#1D69B5]" />
+          <div className="flex-shrink-0 w-12 h-12 bg-icon borde=2 border-[#BBD5EE]  rounded-full flex items-center justify-center">
+            <Mail className="w-5 h-5 text-[#1D69B5] " />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+            <h3 className="font-semibold text-black mb-1">Email</h3>
             <a 
               href={`mailto:${email}`}
-              className="text-[#1D69B5] hover:text-blue-800 transition-colors duration-200"
+              className="text-black hover:text-black transition-colors duration-200"
             >
               {email}
             </a>
@@ -40,23 +42,22 @@ const ContactInfo = ({
 
         {/* Phone */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex-shrink-0 w-12 h-12 bg-icon rounded-full flex items-center justify-center">
             <Phone className="w-5 h-5 text-[#1D69B5]" />
           </div>
           <div>
             <h3 className="font-semibold text-gray-900 mb-1">Phone/WhatsApp</h3>
             <a 
               href={`tel:${phone}`}
-              className="text-[#1D69B5] hover:text-blue-800 transition-colors duration-200"
+              className="text-black hover:black transition-colors duration-200"
             >
               {phone}
             </a>
           </div>
         </div>
 
-        {/* Office */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex-shrink-0 w-12 h-12 bg-icon rounded-full flex items-center justify-center">
             <MapPin className="w-5 h-5 text-[#1D69B5]" />
           </div>
           <div>
@@ -67,13 +68,11 @@ const ContactInfo = ({
           </div>
         </div>
 
-        {/* Map Placeholder */}
+
         <div className="mt-6 rounded-lg overflow-hidden border-2 border-dashed border-blue-200 bg-blue-50">
           <div className="h-48 flex items-center justify-center">
-            <div className="text-center text-[#1D69B5]">
-              <MapPin className="w-12 h-12 mx-auto mb-2 opacity-50" />
-              <p className="text-sm font-medium">Interactive Map</p>
-              <p className="text-xs opacity-75">Map integration placeholder</p>
+            <div className="h-48 w-full">
+              <MyMap />
             </div>
           </div>
         </div>
