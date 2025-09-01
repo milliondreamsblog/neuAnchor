@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, FileUp as FileUser, GraduationCap } from 'lucide-react';
 
-// Icon mapping for dynamic icon selection
+
 const iconMap = {
   Users,
   FileUser,
